@@ -1,6 +1,7 @@
 export const LOGIN = 'LOGIN';
 export const GET_CURRENCIES_SUCESS = 'CURRENCIES_SUCESS';
 export const GET_CURRENCIES_FAILURE = 'CURRENCIES_FAILURE';
+export const ADD_EXPENSES_INFORMATIONS = 'ADD_EXPENSES_INFORMATIONS';
 
 export const login = (payload) => ({ type: LOGIN, payload });
 
@@ -14,13 +15,17 @@ const currenciesFailure = (error) => ({
   error,
 });
 
+export const addExpenses = (payload) => ({
+  type: ADD_EXPENSES_INFORMATIONS,
+  payload,
+});
+
 export const getCurrencies = () => async (dispatch) => {
   try {
     const CURRENCIES_API = 'https://economia.awesomeapi.com.br/json/all';
 
     const response = await fetch(CURRENCIES_API);
     const data = await response.json();
-    console.log(data);
     const currencies = Object.keys(data).filter((currency) => currency !== 'USDT');
     dispatch(currenciesSucess(currencies));
   } catch (error) {
