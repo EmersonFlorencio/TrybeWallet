@@ -9,7 +9,6 @@ class Table extends Component {
       <table>
         <thead>
           <tr>
-            <th>#</th>
             <th>Descrição</th>
             <th>Tag</th>
             <th>Método de pagamento</th>
@@ -26,7 +25,6 @@ class Table extends Component {
             tag, value, currency, exchangeRates, method,
           }, index) => (
             <tr key={ index }>
-              <td>{index}</td>
               <td>{description}</td>
               <td>{tag}</td>
               <td>{method}</td>

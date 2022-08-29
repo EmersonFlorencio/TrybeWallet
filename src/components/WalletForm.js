@@ -32,16 +32,16 @@ class WalletForm extends Component {
     e.preventDefault();
     const response = await fetch('https://economia.awesomeapi.com.br/json/all');
     const currencies = await response.json();
-    const { id } = this.state;
-    const coutId = id;
     delete currencies.USDT;
+    const { id } = this.state;
+    const coutId = id + 1;
     this.setState({
-      id: coutId + 1,
       exchangeRates: currencies,
     });
     const { dispatch } = this.props;
     dispatch(addExpenses(this.state));
     this.setState({
+      id: coutId,
       value: '',
       description: '',
       currency: 'USD',
