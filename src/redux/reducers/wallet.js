@@ -1,6 +1,7 @@
 import { ADD_EXPENSES_INFORMATIONS,
   GET_CURRENCIES_FAILURE,
   GET_CURRENCIES_SUCESS,
+  REMOVE_EXPENSES_INFORMATIONS,
 } from '../actions';
 
 const INITIAL_STATE = {
@@ -26,6 +27,11 @@ function wallet(state = INITIAL_STATE, action) {
     return {
       ...state,
       expenses: [...state.expenses, action.payload],
+    };
+  case REMOVE_EXPENSES_INFORMATIONS:
+    return {
+      ...state,
+      expenses: state.expenses.filter((expense) => expense.id !== action.remove),
     };
   default:
     return state;

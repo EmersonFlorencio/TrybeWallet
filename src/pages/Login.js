@@ -45,7 +45,7 @@ class Login extends React.Component {
   render() {
     const { buttonDisable, user, password } = this.state;
     return (
-      <form className="Login" onSubmit={ this.hendleSubimit }>
+      <form className="Login">
         <h3 className="text-center">Login</h3>
         <input
           type="email"
@@ -63,7 +63,11 @@ class Login extends React.Component {
           value={ password }
           name="password"
         />
-        <button type="submit" disabled={ buttonDisable }>
+        <button
+          disabled={ buttonDisable }
+          type="submit"
+          onClick={ this.hendleSubimit }
+        >
           Entrar
         </button>
 
