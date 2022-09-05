@@ -50,7 +50,7 @@ class Login extends React.Component {
         <input
           type="email"
           onChange={ this.hendleChange }
-          placeholder="E-mail"
+          placeholder="Email"
           data-testid="email-input"
           value={ user }
           name="user"
