@@ -1,10 +1,24 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Projeto TrybeWallet!🪙️
+
+## Descrição do Projeto
+
+Projeto realizado no modulo de front-end com o intuito de realizar uma carteira digital onde podemos adicionar e remover despesas ultilizando moedas de varios paises do mundo.
+
+---
+
+## Minha experiencia em desenvolver o projeto
+
+Um projeto muito bom de se fazer, mas um pouco difícil de se realizar, foi necessarios ultilizar o redux com o React, configurar o redux como um todo, enteder os conceitos de estado global, actions, reducers e a store e aplicar esses conceitos durante o desenvolvimento. 
+
+---
+
+## Arquivos desenvolvidor por mim
+
+* Arquivos da Pasta Components
+* Arquivos e configuração do Redux
+* Arquivos da Pasta Pages
+* Arquivos de test
+
+---
+
+<strong>Desenvolvido por Emerson Florencio</strong>
